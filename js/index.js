@@ -6,7 +6,13 @@ class Payment {
     this.amount = amount;
   }
 
-  // your code
+  get amount() {
+    return this._amount + " (value in cents)";
+  }
+
+  set amount(value) {
+    this._amount = value * 100;
+  }
 }
 
 // Sample usage - do not modify
